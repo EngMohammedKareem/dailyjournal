@@ -32,9 +32,12 @@ new class extends Component {
         <textarea wire:model="body" id="body" name="body" class="mt-1 block w-full" required ></textarea> 
         <x-input-label for="rating" :value="__('Rate Your Day')" />
         <input type="range" name="rating" min="1" max="10" wire:model="rating" class="mt-1 block w-full" />
-        <div class="mt-5">
-            <x-primary-button class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-5 rounded" type="submit">
-                {{ __('Create') }}
+        <div class="flex justify-between space-x-6">
+            <x-primary-button class="text-white font-bold p-4 rounded-xl" type="submit">
+                CREATE
+            </x-primary-button>
+            <x-primary-button class="text-white font-bold p-4 rounded-xl" href="{{ route('journals.index') }}" wire:navigate>
+                BACK TO JOURNALS
             </x-primary-button>
     </form>
 </div>

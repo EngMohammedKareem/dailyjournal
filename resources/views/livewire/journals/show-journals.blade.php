@@ -1,6 +1,7 @@
 <?php
 
 use Livewire\Volt\Component;
+use App\Models\Journal;
 
 new class extends Component {
     public function with() {
@@ -8,11 +9,14 @@ new class extends Component {
             "journals"=>auth()->user()->journals()->get()
     ];
     }
+    public function destroy($journalid) {
+        $journal = Journal::where('id', $journalid)->first();
+        $journal->delete();
+    }
 }; ?>
 @if($journals->isEmpty())
-    <div class="text-center font-bold space-y-4 text-xl">
-        <h1>Nothing is here, let's share your first journal with the world</h1>
-        <x-primary-button class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-5 rounded" href="{{ route('journals.create') }}" wire:navigate>Write a jourrnal</x-primary-button>
+    <div class="text-center font-bold text-xl">
+        <h1>Nothing is here, Click up there to share your first journal with the world</h1>
     </div>
 @else
 
@@ -20,13 +24,8 @@ new class extends Component {
     
      @foreach($journals as $journal)
     @php
-        // Determine background color based on rating
-        $ratingColor = 'bg-green-300'; // Default color
-        if ($journal->rating < 5) {
-            $ratingColor = 'bg-red-300';
-        } elseif ($journal->rating >= 5 && $journal->rating < 8) {
-            $ratingColor = 'bg-yellow-300';
-        }
+        // Journals lower than 6 are red and higher than 6 are green
+        $ratingColor = $journal->rating < 6 ? 'bg-red-300' : 'bg-green-300';
     @endphp
     <div class="flex flex-col {{ $ratingColor }} p-4 rounded-lg shadow-md" wire:key="{{ $journal->id }}">
         <!-- Title and Date -->
@@ -46,7 +45,8 @@ new class extends Component {
         </div>
         
         <!-- Posted by -->
-        <div class="text-right text-gray-600 text-sm">
+        <div class="flex justify-between items-center mt-3">
+            <x-danger-button wire:click="destroy('{{ $journal->id }}')">DELETE</x-danger-button>
             <p>Posted by: {{ auth()->user()->name }}</p>
         </div>
     </div>

@@ -1,66 +1,53 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# DAILYJOURNAL
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This is a project i created to learn Laravel and it's been a seriously satisfying and fun process so i decided to share it in hopes of getting feedback on my code as well as learning from other people and see how they'd approach certain problems during development
 
-## About Laravel
+## MOTIVATION
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The basic idea of this project was to create a way to document your daily activities and what's been remarkable about your day in hopes of helping you keep track of perhaps good habits that made them happy that day or keep track of their social life
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## FEATURES OF THE APP
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. Easy and intruitive UI
+2. Accessible and very minimal
+3. Respnsive design for mobile users using tailwindCSS
+4. Ability to "rate" your day by using a slider element
+5. Thw background of the published journal changes based on the rating you gave
 
-## Learning Laravel
+## SCREENSHOTS FROM THE APP
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![home page](https://prnt.sc/X7-RJMxOAhRo)
+![login page](https://prnt.sc/ksvGU6RrKA0x)
+![register page](https://prnt.sc/0DirniHd8UHU)
+![create a new journal](https://prnt.sc/yg5yLoTgr9lw)
+![display of jouenals](https://prnt.sc/oeIZb-M0w5H5)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## THE TECH STACK USED
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+For this project i wanted to learn more about Laravel development so i decided to try the **TALL** stack which is considered more "modern" than traditional MVC architecture and it consists of :
 
-## Laravel Sponsors
+1. **T**ailwindCSS for the styling - loved it so much since it enabled me to have more control over my styling without the hastle of keeping up with CSS identifiers for my elements and such
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+2. **A**lpine.JS - super minimal javascript frontend framework that looks like Jquery at first glance and honestly it comes hand to hand with Livewire so i will give my opinion about them down below
 
-### Premium Partners
+3. **L**ivewire - a really powerful way to scaffold dynamic UI for your laravel projects with resemblance to JS frameworks like Vue and React since it's component - based
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+4. **L**aravel - a truly powerful and enjoyable PHP framework that comes with endless features and packages out of the box ranking it the top framework when it comes to the developer experience and it powers this project i made
 
-## Contributing
+For storage i simply used sqlite since it's configured by default and i used laravel breeze for auth tasks (login,register,forgot password,confirm email, etc)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## WHAT I'VE LEARNED BUILDING THIS PROJECT
 
-## Code of Conduct
+I learnd how to use Livewire and build components with it rather than the traditional Laravel MVC way which was quite a fun experience but not for me tbh
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## WHAT I DIDN'T LIKE ABOUT THIS PROJECT
 
-## Security Vulnerabilities
+I didn't like Livewire/Volt tbh because of the concept of components that resembles React and Vue ( my personal opinion only ) as opposed to the MBC way which i honestly enjoyed way more since i had control of everything and i had great advantage with an amazing feature named route binding
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+So overall Livewire was ight but i won't use it in future projects
 
-## License
+### HOW TO CONTRIBUTE
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. fork this repo (star it too pls and ty )
+2. add a feature / improve one
+3. make a PR
