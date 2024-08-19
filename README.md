@@ -16,11 +16,11 @@ The basic idea of this project was to create a way to document your daily activi
 
 ## SCREENSHOTS FROM THE APP
 
-<img src = "https://prnt.sc/X7-RJMxOAhRo"/>
-[login page](https://prnt.sc/ksvGU6RrKA0x)
-[register page](https://prnt.sc/0DirniHd8UHU)
-![create a new journal](https://prnt.sc/yg5yLoTgr9lw)
-![display of jouenals](https://prnt.sc/oeIZb-M0w5H5)
+![image](https://github.com/user-attachments/assets/58ee6090-ba25-4bc8-9f4d-58095c1a0e02)
+![image](https://github.com/user-attachments/assets/0054a4b7-bef7-4640-8558-39b3c5af20ec)
+![image](https://github.com/user-attachments/assets/0b1598a5-21b4-4e0e-8885-34325dab4c8a)
+![image](https://github.com/user-attachments/assets/f290af54-08b5-4817-b10d-2bcfe024fd34)
+
 
 ## THE TECH STACK USED
 
