@@ -16,7 +16,7 @@ The basic idea of this project was to create a way to document your daily activi
 
 ## SCREENSHOTS FROM THE APP
 
-[home page](https://prnt.sc/X7-RJMxOAhRo)
+<img src = "https://prnt.sc/X7-RJMxOAhRo"/>
 [login page](https://prnt.sc/ksvGU6RrKA0x)
 [register page](https://prnt.sc/0DirniHd8UHU)
 ![create a new journal](https://prnt.sc/yg5yLoTgr9lw)
