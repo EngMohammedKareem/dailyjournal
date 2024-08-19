@@ -23,12 +23,9 @@
             </div>
             <div class="flex flex-col items-center mt-10 space-y-5 text-xl font-bold font-mono">
                 <img src="https://ouch-cdn2.icons8.com/WB0j20utz0l3cdTY68vXSfsZf3mli9aiL3nQOm4YXq0/rs:fit:425:456/extend:false/wm:1:re:0:0:0.8/wmid:ouch/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzAy/LzNjYzQ0MGU1LWVm/MDUtNDRhNi1hYWE2/LTFmYTU4ZDNlYTIx/YS5zdmc.png" class="h-36 w-36">
-                <ul>
-                    <li>✅ Easily create and keep your journal online</li>
-                    <li>✅ Rate your day and highlgiht what made it such rating to you </li>
-                    <li>✅ Disocver how others are enjoying their days and what have they been up to </li>
-                    
-                </ul>
+                
+                <p>The best solution to keep track of how your day is going</p>
+
                 @auth
                     <a href="/dashboard" class="bg-red-600 text-white font-extrabold px-5 py-3 rounded-xl">GET STARTED</a>
                 @endauth
